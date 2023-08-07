@@ -26,7 +26,7 @@ public class FirstClassTest {
     }
 	@AfterAll
     public static void tearDownAll() {
-        System.out.println("Cleaning up CalculatorTest class");
+        System.out.println("Cleaning up firstClassTest class");
     }
 	@Test
 	public void calaculationEquationTest() {
