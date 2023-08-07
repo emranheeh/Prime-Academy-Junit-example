@@ -2,6 +2,7 @@ package prime.academy.firstJunitProjectTest;
 
  
 
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
@@ -22,6 +23,10 @@ public class FirstClassTest {
         System.out.println("Clear Calculator instance for each test");
         fc1 = new FirstClass();
          
+    }
+	@AfterAll
+    public static void tearDownAll() {
+        System.out.println("Cleaning up CalculatorTest class");
     }
 	@Test
 	public void calaculationEquationTest() {
